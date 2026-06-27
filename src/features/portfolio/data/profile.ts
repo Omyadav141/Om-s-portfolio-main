@@ -1,0 +1,35 @@
+export const profile = {
+  name: "Om Yadav",
+  firstName: "Om",
+  lastName: "Yadav",
+  roles: [
+    "Data Scientist",
+    "Full-Stack Dev",
+    "AI/ML Engineer",
+    "Sports Specialist",
+  ],
+  status: "Available for Opportunities",
+  tagline:
+    "B.Tech CSE student at GH Raisoni University, Nagpur. Building at the intersection of data science, NLP, and web — from published research to real startups.",
+  shortBio: "B.Tech CSE '27 · Nagpur · Data Scientist",
+  badges: ["B.Tech CSE '27", "Nagpur, India", "Data Scientist"],
+  photo: "/portfolio/profile1.jpg",
+  photoAlt: "/portfolio/profile.jpg",
+  email: "omyadv@icloud.com",
+  collegeEmail: "om.yadav.cse@ghrua.edu.in",
+  location: "Nagpur, Maharashtra, India",
+  university: "GH Raisoni University, Nagpur",
+  github: "https://github.com/Omyadav141",
+  resume: "/portfolio/Om_Yadav_Resume_2025.html",
+  resumeAlt: [
+    { label: "CV (PDF)", href: "/portfolio/OM_YADAV_CV.pdf" },
+    { label: "Data Analyst Resume", href: "/portfolio/Om_Yadav_-_Data_Analyst.pdf" },
+    { label: "Internshala Resume", href: "/portfolio/OmYadav_InternshalaResume_2.pdf" },
+  ],
+  stats: [
+    { value: "3+", label: "Research Papers" },
+    { value: "25+", label: "Certifications" },
+    { value: "11+", label: "Projects" },
+    { value: "3", label: "Startups" },
+  ],
+} as const;

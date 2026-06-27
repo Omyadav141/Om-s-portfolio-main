@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Om Yadav — Resume 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy: #0B1E3D;
+  --accent: #0A6EBD;
+  --accent-light: #E8F3FC;
+  --text: #1A2B3C;
+  --muted: #5A6B7C;
+  --border: #D8E2EC;
+  --sidebar-bg: #F0F5FA;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #B8C8D8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 16px 48px;
+}
+
+.print-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 11px 32px;
+  border-radius: 6px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 20px;
+  letter-spacing: 0.4px;
+  transition: background 0.2s;
+}
+.print-btn:hover { background: #085A9A; }
+
+.resume {
+  width: 800px;
+  background: var(--white);
+  box-shadow: 0 8px 56px rgba(0,0,0,0.20);
+}
+
+/* ══ HEADER ══ */
+.header {
+  background: var(--navy);
+  padding: 36px 44px 28px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: #6C9DC0;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  padding-top: 6px;
+}
+
+.header-link {
+  font-size: 12.5px;
+  color: #6C9DC0;
+  text-decoration: none;
+}
+.header-link:hover { color: #A4C8E0; }
+
+.contact-row {
+  display: flex;
+  gap: 26px;
+  border-top: 1px solid rgba(255,255,255,0.09);
+  padding-top: 17px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  font-size: 12.5px;
+  color: #6C9DC0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* ══ BODY ══ */
+.body { display: flex; }
+
+.main {
+  flex: 1;
+  padding: 30px 34px 36px 44px;
+}
+
+.sidebar {
+  width: 234px;
+  flex-shrink: 0;
+  background: var(--sidebar-bg);
+  padding: 30px 22px;
+  border-left: 1px solid var(--border);
+}
+
+/* ══ SECTION TITLES (main) ══ */
+.sec-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  color: var(--accent);
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sec-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section { margin-bottom: 24px; }
+
+/* ══ SUMMARY ══ */
+.summary {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* ══ EXPERIENCE ══ */
+.exp-item { margin-bottom: 17px; }
+
+.exp-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.exp-company {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.exp-badge {
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 2px 9px;
+  border-radius: 4px;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.exp-role {
+  font-size: 12.5px;
+  color: var(--accent);
+  font-weight: 500;
+  margin: 2px 0;
+}
+
+.exp-type {
+  font-size: 11px;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.exp-ul { list-style: none; }
+
+.exp-ul li {
+  font-size: 12.5px;
+  color: #374960;
+  line-height: 1.65;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.exp-ul li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.exp-rule {
+  height: 1px;
+  background: var(--border);
+  margin: 14px 0;
+}
+
+/* ══ PROJECTS ══ */
+.proj-item {
+  margin-bottom: 15px;
+  border-left: 3px solid var(--accent);
+  padding-left: 13px;
+}
+
+.proj-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1px;
+}
+
+.proj-tech {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-bottom: 3px;
+  letter-spacing: 0.3px;
+}
+
+.proj-desc {
+  font-size: 12.5px;
+  color: #374960;
+  line-height: 1.65;
+  margin-bottom: 4px;
+}
+
+.proj-link {
+  font-size: 11.5px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ══ SIDEBAR TITLES ══ */
+.side-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--navy);
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 13px;
+}
+
+.side-section { margin-bottom: 22px; }
+
+/* ══ EDUCATION ══ */
+.edu-item { margin-bottom: 12px; }
+
+.edu-degree {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.edu-inst {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+.edu-year {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* ══ SKILLS ══ */
+.skill-group { margin-bottom: 10px; }
+
+.skill-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-bottom: 5px;
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+.tag {
+  font-size: 11px;
+  background: var(--white);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* ══ CERTIFICATIONS ══ */
+.cert-item { margin-bottom: 9px; }
+
+.cert-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.cert-issuer {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+/* ══ PRINT ══ */
+@media print {
+  body { background: white; padding: 0; }
+  .print-btn { display: none; }
+  .resume { box-shadow: none; width: 100%; }
+  @page { size: A4; margin: 0; }
+}
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">⬇&nbsp;&nbsp;Download / Save as PDF</button>
+
+<div class="resume">
+
+  <!-- ══════════ HEADER ══════════ -->
+  <div class="header">
+    <div class="header-main">
+      <div>
+        <div class="name">Om Yadav</div>
+        <div class="tagline">Data Science &nbsp;·&nbsp; Machine Learning &nbsp;·&nbsp; Full-Stack Development</div>
+      </div>
+      <div class="header-right">
+        <a href="https://linkedin.com/in/omyadv" class="header-link">&#128100; linkedin.com/in/omyadv</a>
+        <a href="https://github.com/Omyadav141" class="header-link">&#128279; github.com/Omyadav141</a>
+        <a href="https://omyadav141.github.io/" class="header-link">&#127760; Portfolio</a>
+      </div>
+    </div>
+    <div class="contact-row">
+      <span class="contact-item">&#9993; omyadav15092005@gmail.com</span>
+      <span class="contact-item">&#9990; +91 9730917384</span>
+      <span class="contact-item">&#9679; Nagpur, Maharashtra, India</span>
+    </div>
+  </div>
+
+  <!-- ══════════ BODY ══════════ -->
+  <div class="body">
+
+    <!-- ─────── MAIN COLUMN ─────── -->
+    <div class="main">
+
+      <!-- CAREER SUMMARY -->
+      <div class="section">
+        <div class="sec-title">Career Summary</div>
+        <p class="summary">
+          Aspiring Data Scientist and Full-Stack Developer with hands-on experience in Python, machine learning, 
+          and data analytics. Passionate about building intelligent, data-driven solutions that create real-world 
+          impact. Currently pursuing B.Tech in CSE (2023–2027) with a focus on NLP and AI applications, 
+          backed by multiple industry simulations and certifications.
+        </p>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="section">
+        <div class="sec-title">Work Experience</div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-company">TATA</span>
+            <span class="exp-badge">May – Jun 2025</span>
+          </div>
+          <div class="exp-role">Data Analytics &amp; Data Visualisation Internship</div>
+          <div class="exp-type">Virtual Job Simulation – Forage</div>
+          <ul class="exp-ul">
+            <li>Explored real-world GenAI-powered data analytics use cases across business functions</li>
+            <li>Applied AI tools to assist strategic data-driven decision-making</li>
+            <li>Built interactive dashboards and visualizations to surface actionable business insights</li>
+          </ul>
+        </div>
+
+        <div class="exp-rule"></div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-company">British Airways</span>
+            <span class="exp-badge">Apr – May 2025</span>
+          </div>
+          <div class="exp-role">Data Science Internship</div>
+          <div class="exp-type">Virtual Job Simulation – Forage</div>
+          <ul class="exp-ul">
+            <li>Analyzed flight and customer datasets to uncover meaningful behavioral patterns</li>
+            <li>Built predictive models using Python and Scikit-learn for customer behavior analysis</li>
+            <li>Developed clear visualizations to communicate findings to non-technical stakeholders</li>
+          </ul>
+        </div>
+
+        <div class="exp-rule"></div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-company">BCG X</span>
+            <span class="exp-badge">Mar 2025</span>
+          </div>
+          <div class="exp-role">Data Science Internship</div>
+          <div class="exp-type">Virtual Job Simulation – Forage</div>
+          <ul class="exp-ul">
+            <li>Cleaned and analyzed complex multi-source datasets for consulting use cases</li>
+            <li>Generated data-backed insights to support strategic business decision-making</li>
+          </ul>
+        </div>
+
+        <div class="exp-rule"></div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-company">Accenture</span>
+            <span class="exp-badge">Feb – Mar 2025</span>
+          </div>
+          <div class="exp-role">Project Management Job Simulation</div>
+          <div class="exp-type">Virtual Job Simulation – Forage</div>
+          <ul class="exp-ul">
+            <li>Managed project timelines, deliverables, and cross-functional stakeholder communication</li>
+            <li>Identified project risks and proposed structured mitigation strategies</li>
+          </ul>
+        </div>
+
+        <div class="exp-rule"></div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <span class="exp-company">Cognify Technology</span>
+            <span class="exp-badge">Jan – Mar 2024</span>
+          </div>
+          <div class="exp-role">Data Science Intern</div>
+          <div class="exp-type">Virtual Internship</div>
+          <ul class="exp-ul">
+            <li>Contributed to real-world data science projects involving data wrangling and exploratory analysis</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="section">
+        <div class="sec-title">Projects</div>
+
+        <div class="proj-item">
+          <div class="proj-name">Full Stack AI Career Coach</div>
+          <div class="proj-tech">Python &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; AI/LLM APIs</div>
+          <div class="proj-desc">AI-powered career guidance platform for resume analysis, skill gap detection, and personalized career recommendations using modern full-stack and AI technologies.</div>
+          <a class="proj-link" href="https://github.com/Omyadav141/AI-Career-Coach" target="_blank">github.com/Omyadav141/AI-Career-Coach ↗</a>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Syquora – Blue Carbon &amp; Carbon Credit Management Platform</div>
+          <div class="proj-tech">React &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; Full-Stack Web</div>
+          <div class="proj-desc">Climate-tech web platform for tracking blue carbon restoration projects and managing transparent carbon credit workflows. Built using modern full-stack web technologies.</div>
+          <a class="proj-link" href="https://omyadav141.github.io/SYQUORA/" target="_blank">omyadav141.github.io/SYQUORA ↗</a>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Fake News Detection System (NLP)</div>
+          <div class="proj-tech">Python &nbsp;·&nbsp; NLP &nbsp;·&nbsp; Scikit-learn &nbsp;·&nbsp; NLTK</div>
+          <div class="proj-desc">College project applying Natural Language Processing and ML classifiers to detect and flag fake news articles, involving text preprocessing, feature extraction, and model evaluation.</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Smart Financial Services Web App</div>
+          <div class="proj-tech">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript</div>
+          <div class="proj-desc">Comprehensive web application offering intelligent financial services and planning tools for users, featuring a clean and responsive UI.</div>
+          <a class="proj-link" href="https://lnkd.in/dCmGm3k2" target="_blank">Live Website ↗</a>
+        </div>
+
+      </div>
+
+    </div><!-- /main -->
+
+    <!-- ─────── SIDEBAR ─────── -->
+    <div class="sidebar">
+
+      <!-- EDUCATION -->
+      <div class="side-section">
+        <div class="side-title">Education</div>
+
+        <div class="edu-item">
+          <div class="edu-degree">B.Tech – Computer Science &amp; Engineering</div>
+          <div class="edu-inst">G H Raisoni College of Engineering, Nagpur</div>
+          <div class="edu-year">2023 – 2027</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-degree">Senior Secondary (XII)</div>
+          <div class="edu-inst">New English Junior College</div>
+          <div class="edu-year">2023</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-degree">Secondary (X)</div>
+          <div class="edu-inst">Somalwar High School</div>
+          <div class="edu-year">2020 &nbsp;·&nbsp; 73%</div>
+        </div>
+      </div>
+
+      <!-- TECHNICAL SKILLS -->
+      <div class="side-section">
+        <div class="side-title">Technical Skills</div>
+
+        <div class="skill-group">
+          <div class="skill-label">Languages</div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">R</span>
+            <span class="tag">C</span>
+            <span class="tag">Java</span>
+            <span class="tag">C#</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">ML / Data</div>
+          <div class="tags">
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">NLP</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Databases</div>
+          <div class="tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Web & Tools</div>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">DevOps</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="side-section">
+        <div class="side-title">Certifications</div>
+
+        <div class="cert-item">
+          <div class="cert-name">AI For All</div>
+          <div class="cert-issuer">Intel · Skill India · 2025</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">AI Affluency For All (AI2P VR)</div>
+          <div class="cert-issuer">Microsoft · Skill India Digital Hub</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Scikit-Learn Machine Learning</div>
+          <div class="cert-issuer">Simplilearn · Jun 2025</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Machine Learning for Beginners</div>
+          <div class="cert-issuer">Simplilearn · Jun 2025</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">R Programming for Beginners</div>
+          <div class="cert-issuer">Simplilearn · May 2025</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">PostgreSQL: SQL Developer</div>
+          <div class="cert-issuer">Simplilearn · Apr 2025</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Python</div>
+          <div class="cert-issuer">Udemy · Aug–Sep 2024</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Data Science vs ML vs AI</div>
+          <div class="cert-issuer">Scaler · Jul 2024</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Intro to SQL</div>
+          <div class="cert-issuer">Simplilearn · Mar 2025</div>
+        </div>
+
+      </div>
+
+    </div><!-- /sidebar -->
+
+  </div><!-- /body -->
+</div><!-- /resume -->
+
+</body>
+</html>

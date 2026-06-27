@@ -1,0 +1,15 @@
+export const certifications = [
+  { logo: "/portfolio/rprogram.png", issuer: "Simplilearn", title: "R Programming for Beginners", date: "Jan – Apr 2024", href: "/portfolio/r_program.pdf" },
+  { logo: "/portfolio/machinelearning.png", issuer: "Simplilearn SkillUp", title: "Machine Learning for Beginners", date: "Jun 2025", href: "/portfolio/machine_learning.pdf" },
+  { logo: "/portfolio/scikit-learn.png", issuer: "Simplilearn SkillUp", title: "Scikit-Learn for Beginners", date: "Jun 2025", href: "/portfolio/cikit-learn.pdf" },
+  { logo: "/portfolio/postgresql.png", issuer: "Simplilearn SkillUp", title: "PostgreSQL: Become an SQL Developer", date: "Apr 2025", href: "/portfolio/postgresql-sql-developer.pdf" },
+  { logo: "/portfolio/datascience-python.png", issuer: "Simplilearn SkillUp", title: "Introduction to Applied Data Science with Python", date: "Mar 2025", href: "/portfolio/applied-data-science-python.pdf" },
+  { logo: "/portfolio/sql-introduction.png", issuer: "Simplilearn SkillUp", title: "Introduction to SQL", date: "Mar 2025", href: "/portfolio/introduction-sql.pdf" },
+  { logo: "/portfolio/bcg.png", issuer: "BCG × Forage", title: "Data Science Job Simulation", date: "Mar 2025", href: "/portfolio/bcg.png" },
+  { logo: "/portfolio/british-airways.png", issuer: "British Airways × Forage", title: "Data Science Job Simulation", date: "May 2025", href: "/portfolio/british-airways.png" },
+  { logo: "/portfolio/accenture.png", issuer: "Accenture × Forage", title: "Project Management Job Simulation", date: "Mar 2025", href: "/portfolio/accenture.png" },
+  { logo: "/portfolio/intel.png", issuer: "Intel", title: "AI FOR ALL", date: "Jul 2025", href: "/portfolio/intel.pdf" },
+  { logo: "/portfolio/sih.png", issuer: "Smart India Hackathon", title: "SIH Participant", date: "Sep 2025", href: "/portfolio/sih.png" },
+  { logo: "/portfolio/datavisual.png", issuer: "TATA", title: "Data Visualisation: Empowering Business with Effective Insights", date: "Jul 2025", href: "/portfolio/tata_data_visual.pdf" },
+  { logo: "/portfolio/genai-simulation.png", issuer: "TATA", title: "GenAI Powered Data Analytics Job Simulation", date: "Jul 2025", href: "/portfolio/genai_tata.pdf" },
+] as const;
